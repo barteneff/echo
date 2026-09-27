@@ -21,6 +21,13 @@ npm install
 npm run dev
 ```
 
+## GitHub Pages
+
+Сайт: https://barteneff.github.io/echo/
+
+Деплой идёт автоматически из `main` через Actions (`.github/workflows/deploy-pages.yml`).
+В Settings → Pages должен быть Source: **GitHub Actions**.
+
 ## Aesthetic rules
 
 No soft beauty: hard thresholds, nearest/pixel feel, one accent per mode (`#A8FF00` / `#FF4D00` / `#00E5FF`).
