@@ -25,8 +25,12 @@ npm run dev
 
 Сайт: https://barteneff.github.io/echo/
 
-Деплой идёт автоматически из `main` через Actions (`.github/workflows/deploy-pages.yml`).
-В Settings → Pages должен быть Source: **GitHub Actions**.
+```bash
+npm run deploy
+```
+
+Публикует `dist` в ветку `gh-pages` ([gh-pages](https://www.npmjs.com/package/gh-pages)).
+В Settings → Pages → Source выбери branch **gh-pages** / **/ (root)**.
 
 ## Aesthetic rules
 
