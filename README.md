@@ -32,6 +32,16 @@ npm run deploy
 Публикует `dist` в ветку `gh-pages` ([gh-pages](https://www.npmjs.com/package/gh-pages)).
 В Settings → Pages → Source выбери branch **gh-pages** / **/ (root)**.
 
-## Aesthetic rules
+## Architecture (FSD)
 
-No soft beauty: hard thresholds, nearest/pixel feel, one accent per mode (`#A8FF00` / `#FF4D00` / `#00E5FF`).
+```
+src/
+  app/         # bootstrap, Engine, Timeline
+  pages/       # Signals / Wars / Flat modes
+  widgets/     # HUD shell
+  features/    # (reserved)
+  entities/    # audio, cover, faction, signal
+  shared/      # theme, config
+```
+
+Aliases: `@app`, `@pages`, `@widgets`, `@features`, `@entities`, `@shared`.
